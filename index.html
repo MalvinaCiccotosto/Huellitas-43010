@@ -8,24 +8,51 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--STYLE-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Huellitas Argentinas</title>
 </head>
-
 <body>
     <header>
         <h1>HU<span>ELLI</span>TAS ARG<span>ENTI</span>NAS</h1>
-        <nav>
-            <!-- Listas desordenadas -->
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/perritosperdidos.html">Perritos Perdidos</a></li>
-                <li><a href="./pages/adoptaaunamigo.html">Adopta un amigo!</a></li>
-                <!-- Enlaces internos -->
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/adoptaaunamigo.html">Adopta un amigo!<i class="bi bi-chat-square-heart"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/perritosperdidos.html">Perritos Perdidos</a></li>
+                                <li><a class="dropdown-item" href="./pages/nosotros.html">Nosotros</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -48,13 +75,11 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
                 </div>
-
                 <div class="imagen-adopta">
-
+                   
                 </div>
                 
             </div>
-            
         </section>
         <section class="animalitos">
             <h2> ANIMALITOS ESPERANDOTE </h2>
@@ -119,7 +144,6 @@
                 <h3>No es la raza, es la crianza</h3>
             </div>
         </section>
-
     </main>
     <div class="position">
         <img src="./img/wpp.png" alt="">
@@ -143,5 +167,4 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

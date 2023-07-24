@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400&display=swap');
 
 /*------RESET------*/
 
@@ -66,10 +66,14 @@ header nav{
 
 i{
     font-size: 15px;
-    color: rgb(45, 4, 168)
+    color: rgb(45, 4, 168);
 }
 
 /*------MAIN-----*/
+
+body {
+    font-family: 'Belanosima', sans-serif;
+}
 
 .hero{
     width: 100%;
@@ -90,7 +94,7 @@ i{
 .hero h2{
     display: inline-block;
     font-size: 40px;
-    border: 5px 
+    border: 5px;
 }
 
 .hero p{
@@ -103,7 +107,7 @@ i{
     align-items: center;
 }
 
-.subtitulo-adopta{
+.subtitulo-adopta {
     display: flex;
 }
 
@@ -113,7 +117,6 @@ i{
 
 .adopta div{
     width: 50%;
-
 }
 
 .adopta div h2{
@@ -124,15 +127,23 @@ font-size: 35px;
     font-size: 20px;
 }
 
-.imagen-adopta{
-    background-image: url('../img/adopta.jpg');
-    width: 200px;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+.subtitulo-adopta {
+    display: flex;
+    align-items: center;
 }
 
-.boton {
+.imagen-adopta {
+    background-image: url('../img/adopta.jpg');
+    width: 100%;
+    height: 0;
+    padding-top: 56%;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.boton{
     text-decoration: none;
     color: aliceblue;
     background-color: black;
@@ -315,7 +326,7 @@ footer div a img{
 
 @media screen and (max-width:720px){
     .hero h2{
-        font-size: 50px;
+        font-size: 30px;
     }
     .hero p{
         font-size: 25px;
@@ -327,6 +338,9 @@ footer div a img{
         position: static;
     }
     .position{
+        display: none;
+    }
+    iframe{
         display: none;
     }
 }
@@ -347,5 +361,20 @@ footer div a img{
     .grid-item{
         grid-column: span 1;
         grid-row: span 1;
+        }
+    }
+    
+    @media screen and (max-width: 1025px) {
+        .subtitulo-adopta {
+            flex-direction: column;
+        }
+    
+        .imagen-adopta {
+            width: 45%; 
+            margin-top: 0;
+        }
+    
+        .video-responsive {
+            width: 45%;
         }
     }
