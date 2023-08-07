@@ -1,0 +1,51 @@
+.adopta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  .titulo-adopta {
+      width: 100%;
+      text-align: center;
+  }
+  
+  .subtitulo-adopta {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      text-align: center;
+      width: 100%;
+
+      > div {
+          width: 50%;
+          
+          p, iframe {
+              width: 100%;
+              margin-bottom: 20px; // Margin notable entre el video y lo que haya abajo
+          }
+      }
+      
+      .imagen-adopta {
+          width: 40%;  
+          height: 600px; 
+          background-image: url('../../img/adopta.jpg');  
+          background-size: cover;
+          background-position: center;
+          margin-left: 20px;
+      }
+  }
+
+  @media screen and (max-width: 1025px) {
+      .subtitulo-adopta {
+          flex-direction: column;
+          align-items: center;  // Asegurándonos de que los elementos están centrados en pantallas más pequeñas
+
+          .imagen-adopta {
+              width: 45%;
+              margin-top: 20px; 
+          }
+      }
+  }
+}
+
+

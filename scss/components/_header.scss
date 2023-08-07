@@ -1,0 +1,51 @@
+// HEADER
+header {
+    background-color: $color-secundario;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    h1 {
+        color: $color-cuaternario;
+        font-size: nth($font-size, 1);
+        font-family: 'Belanosima', sans-serif;
+        font-weight: 900;
+        span {
+            color: $color-terciario;
+        }
+    }
+
+    nav {
+        background-color: $color-secundario;
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                display: inline-block;
+                margin: 5px;
+                a {
+                    text-decoration: none;
+                    color: $color-primario;
+                    &:hover {
+                        text-decoration: underline;
+                        color: $color-quinario;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 100px;
+            height: 100%;
+        }
+    }
+
+    i {
+        font-size: nth($font-size, 2);
+        color: $color-quinario;
+    }
+}

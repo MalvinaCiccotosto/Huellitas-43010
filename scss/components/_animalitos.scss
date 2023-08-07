@@ -1,0 +1,54 @@
+.animalitos {
+    color: $color-secundario;  
+    text-align: center;
+    padding: 10px;
+}
+
+.animalitos h2 {
+    background-color: $color-primario;
+}
+
+.animalitos .card-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.animalitos .card-flex div {
+    width: 250px;
+    height: 350px;
+    border: 2px solid $color-primario;
+    text-align: center;
+    color: $color-secundario;  
+    background-color: $color-primario;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 10px 10px 7px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 7px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 7px 4px rgba(0, 0, 0, 0.75);
+}
+
+.animalitos div h3 {
+    margin-bottom: 10px;
+}
+
+.animalitos div img {
+    width: 250px;
+    height: 250px;
+}
+
+.animalitos div a {
+    text-decoration: none;
+    color: $color-primario;
+    background-color: $color-secundario; 
+    padding: 10px;
+    font-weight: 600;
+    margin: 20px;
+    display: inline-block;
+}
+
+.animalitos div a:hover {
+    background-color: $primary-color-hover;
+    color: $color-secundario;  
+}

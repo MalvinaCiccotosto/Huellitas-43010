@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  height: calc(70vh - 150px);
+  background-image: url(../img/perritos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $color-primario;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    display: inline-block;
+    font-size: 40px;
+    border: 5px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.portada-mascotas {
+  display: flex;
+}
+
+.position {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+
+  img {
+    width: 50px;
+  }
+}
+

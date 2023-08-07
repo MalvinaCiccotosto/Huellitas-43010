@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family;
+}
+
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.boton {
+    text-decoration: none;
+    color: $color-secundario; 
+    background-color: $color-primario;
+    padding: 10px;
+    
+    &:hover {
+        background-color: $primary-color-hover;
+        color: $color-secundario;
+    }
+
+    &:active {
+        background-color: $primary-color-hover;
+        color: $color-primario;
+    }
+}
