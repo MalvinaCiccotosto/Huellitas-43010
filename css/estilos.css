@@ -94,6 +94,9 @@ body {
 .card {
   height: 100%; }
 
+.campo img {
+  width: auto; }
+
 .adopta {
   display: flex;
   flex-direction: column;
@@ -117,7 +120,7 @@ body {
     .adopta .subtitulo-adopta .imagen-adopta {
       width: 40%;
       height: 600px;
-      background-image: url("../../img/adopta.jpg");
+      background-image: url("../img/adopta.jpg");
       background-size: cover;
       background-position: center;
       margin-left: 20px; }
