@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--META DESCRIPTION-->
-    <meta name="description" content="Portal desarrollado para facilitar la búsqueda de su animal perdido, como también la adopción de animales.">
+    <meta name="description"
+        content="Portal desarrollado para facilitar la búsqueda de su animal perdido, como también la adopción de animales.">
     <!--KEYWORDS-->
-    <meta name="keywords" content="animales, adopcion, perros, perdidos,gatos, adoptar, encontrar, perros perdidos, gatos perdidos, mascotas, adoptar mascota">
+    <meta name="keywords"
+        content="animales, adopcion, perros, perdidos,gatos, adoptar, encontrar, perros perdidos, gatos perdidos, mascotas, adoptar mascota">
     <!--PROTOCOLO OPEN GRAPH-->
     <meta property="og:type" content="E-commerce">
     <!--TITLE-->
@@ -17,7 +20,8 @@
     <!--IMAGE-->
     <meta property="og:image" content="../img/huellita.png">
     <!--DESCRIPTION-->
-    <meta property="description" content="Portal desarrollado para facilitar la búsqueda de su animal perdido, como también la adopción de animales.">
+    <meta property="description"
+        content="Portal desarrollado para facilitar la búsqueda de su animal perdido, como también la adopción de animales.">
     <!--FAVICON-->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <!--BOOTSTRAP-->
@@ -27,8 +31,10 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Perritos Perdidos</title>
 </head>
+
 <body>
     <header>
+        <h1>HU<span>ELLI</span>TAS ARG<span>ENTI</span>NAS</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -41,13 +47,71 @@
         </nav>
     </header>
     <main>
+        <div class="container mt-5">
+            <h2 class="mb-4 text-center">Perros Perdidos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-4 d-flex flex-column">
+                        <img src="../img/perdi1.jpg" class="card-img-top" alt="Perro 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Cruella</h5>
+                            <p class="card-text">Se fue de casa el día viernes 09 de Junio a las 19hs. Suele escaparse siempre, es sorda.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 d-flex flex-column">
+                        <img src="../img/perdi2.jpg" class="card-img-top" alt="Perro 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Piraña</h5>
+                            <p class="card-text">Desapareció el día 06/08. Si le decís "reite" se ríe.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 d-flex flex-column">
+                        <img src="../img/perdi3.jpg" class="card-img-top" alt="Perro 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Rosa</h5>
+                            <p class="card-text">Se perdió el 30/05 por Zona Sur, Banfield. Llevaba puesta ropita rosa y collar rosa como en la foto.</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h2 class="mb-4">Reporte de Perro Buscado</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre del Perro</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="zona" class="form-label">Zona donde se perdió</label>
+                    <input type="text" class="form-control" id="zona" name="zona" required>
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="contacto" class="form-label">Información de Contacto</label>
+                    <input type="text" class="form-control" id="contacto" name="contacto" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
 
     </main>
     <footer id="contacto">
         <img src="" alt="">
         <div>
             <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                    alt="Logo Instagram"></a>
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
         </div>
     </footer>
@@ -55,4 +119,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

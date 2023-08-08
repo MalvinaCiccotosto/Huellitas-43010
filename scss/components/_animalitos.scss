@@ -46,9 +46,14 @@
     font-weight: 600;
     margin: 20px;
     display: inline-block;
+    transition: 1s;
 }
 
 .animalitos div a:hover {
     background-color: $primary-color-hover;
     color: $color-secundario;  
+}
+
+.animalitos .card-flex div:hover{
+    transform: scale(1.1);
 }
