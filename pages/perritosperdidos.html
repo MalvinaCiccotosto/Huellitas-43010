@@ -35,15 +35,39 @@
 <body>
     <header>
         <h1>HU<span>ELLI</span>TAS ARG<span>ENTI</span>NAS</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./perritosperdidos.html">Perritos Perdidos</a></li>
-                <li><a href="./adoptaaunamigo.html">Adopta a un amigo</a></li>
-                <!-- Enlaces internos -->
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Más
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/adoptaaunamigo.html">Adopta un amigo</a></li>
+                                <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Escribe acá" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -65,7 +89,7 @@
                         <img src="../img/perdi2.jpg" class="card-img-top" alt="Perro 2">
                         <div class="card-body">
                             <h5 class="card-title">Piraña</h5>
-                            <p class="card-text">Desapareció el día 06/08. Si le decís "reite" se ríe.</p>
+                            <p class="card-text">Desapareció el día 06/08. Si le decís "reite" se ríe. Es de tamaño pequeño, compeltamente blanco.</p>
                             <a href="#" class="btn btn-primary">Ver Detalles</a>
                         </div>
                     </div>
