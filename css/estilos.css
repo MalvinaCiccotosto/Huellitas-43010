@@ -89,13 +89,16 @@ body {
 
 .card-img-top {
   max-width: 100%;
-  height: 70%; }
+  height: 60%; }
 
 .card {
   height: 100%; }
 
-.campo img {
-  width: auto; }
+.campo {
+  max-width: 100%; }
+
+.mascotas-adoptar {
+  max-width: 100%; }
 
 .adopta {
   display: flex;
@@ -124,6 +127,14 @@ body {
       background-size: cover;
       background-position: center;
       margin-left: 20px; }
+  .adopta .card-perritos {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .adopta .card-imagen-perritos {
+    height: 100%;
+    object-fit: cover; }
   @media screen and (max-width: 1025px) {
     .adopta .subtitulo-adopta {
       flex-direction: column;

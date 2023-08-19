@@ -36,6 +36,18 @@
         }
     }
 
+    .card-perritos {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .card-imagen-perritos {
+        height: 100%;
+        object-fit: cover;
+    }
+
     @media screen and (max-width: 1025px) {
         .subtitulo-adopta {
             flex-direction: column;
